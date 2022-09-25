@@ -191,7 +191,7 @@ main {
     /* justify-content: space-between ; */
 }
 
-.popup-box, .popup{
+.popup-box, .popup-box .popup{
   opacity: 0;
   pointer-events: none;
   transition: all 0.25s ease;
@@ -250,6 +250,11 @@ main {
     margin-bottom: 10px;
     padding-top: 10px;
     resize: none;
+}
+
+
+.note {
+    height: 100%;
 }
 
 form button{
