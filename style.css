@@ -130,6 +130,13 @@ main {
      /* color: #556594; */
 }
 
+.note span.bold{
+    font-weight: bold;
+}
+.note span.underline{
+    text-decoration: underline;    
+}
+
 .detail {
     margin-bottom: 13px;
 }
