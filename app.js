@@ -53,6 +53,8 @@ function showNotes() {
                     <div class="settings">
 
                         <i class="uil uil-copy" onclick="copyText(this)"></i>
+                        <button style="padding: 2px" onclick="boldText(this)">B</button>
+                        <button style="padding: 2px" onclick="underlineText(this)">U</button>
                     </div>
                 </div>
             </div>
@@ -90,6 +92,22 @@ function copyText(elem) {
 
   /* Alert the copied text */
   alert("Copied the text: " + spanNote.innerHTML);
+}
+
+function boldText(element){
+    var spanNote =
+    element.parentElement.parentElement.previousElementSibling
+        .lastElementChild;
+    console.log(element);
+    console.log(spanNote);
+    spanNote.classList.toggle('bold')
+}
+function underlineText(element) {
+  var spanNote =
+    element.parentElement.parentElement.previousElementSibling.lastElementChild;
+  console.log(element);
+  console.log(spanNote);
+  spanNote.classList.toggle("underline");
 }
 
 addBtn.addEventListener("click", (e) => {
